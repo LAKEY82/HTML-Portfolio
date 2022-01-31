@@ -16,3 +16,22 @@ closeBtn.addEventListener('click', ()=>{
     menuBtn.style.display='inline-block';
     closeBtn.style.display='none';
 })
+
+
+const navItems =menu.querySelectorAll('li');
+
+
+const changeActiveItem=()=>{
+    navItems.forEach(item =>{
+        const link =item.querySelector('a'); 
+        link.classList.remove('active'); 
+    })
+}
+
+navItems.forEach(item =>{
+    const link =item.querySelector('a'); 
+    link.addEventListener('click', ()=>{
+        changeActiveItem();
+        link.classList.add('active');
+    })
+})
