@@ -35,3 +35,17 @@ navItems.forEach(item =>{
         link.classList.add('active');
     })
 })
+
+
+//READMORE CONTENT
+const ReadMoreBtn =document.querySelector('.read-more');
+const ReadMoreContent=document.querySelector('.read-more-content');
+
+ReadMoreBtn.addEventListener('click', ()=>{
+    ReadMoreContent.classList.toggle('show-content'); 
+    if (ReadMoreContent.classList.contains('show-content')){
+        ReadMoreBtn.textContent="Show less";
+    }else{
+        ReadMoreBtn.textContent="Show More";
+    }
+})
