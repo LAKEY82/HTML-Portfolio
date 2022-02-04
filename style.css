@@ -87,6 +87,16 @@ img{
 
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--background-col);
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-primary);
+}
+
 .btn{
     padding: 1.4rem 3.4rem;
     font-size: 1.1rem;
@@ -99,11 +109,16 @@ img{
 }
 
 .btn:hover{
-    /* box-shadow: 0 2rem var(--background-col); */
+    box-shadow: 0 2rem var(--background-col);
     border-color: var(--color-black);
     background-color: #05094C ;
     color: gold;
     /* font-weight: bold; */
+}
+
+
+nav.show-box-shadow{
+    box-shadow: 0 0.6rem 1rem var(--color-white);
 }
 
 .btn-primary{
@@ -290,7 +305,7 @@ section.about .container .read-more-content{
 
 section.about .container .read-more-content.show-content{
     display: block;
-    
+
 }
 
 section.about .container .read-more{
