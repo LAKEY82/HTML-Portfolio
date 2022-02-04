@@ -95,6 +95,7 @@ img{
 
 ::-webkit-scrollbar-thumb{
     background: var(--color-primary);
+    border-radius: 20px;
 }
 
 .btn{
