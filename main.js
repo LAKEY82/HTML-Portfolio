@@ -56,3 +56,8 @@ ReadMoreBtn.addEventListener('click', ()=>{
 window.addEventListener('scroll',() =>{
     document.querySelector('nav').classList.toggle('show-box-shadow',window.scrollY>0)
 })
+
+
+function formavalidation(){
+    let x =document.getElementById("email").value;
+}

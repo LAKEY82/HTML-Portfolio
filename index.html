@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
+    <title>Lakindu Perera | Portfolio</title>
+    <link rel="shortcut icon" href="images/favi.png">
     <!------------------FONTS FROM GOOGLE FONTS---------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,100;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,900;1,200;1,800;1,900&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+            <!--==================== CSS - Animation ====================-->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
  <!-----------------------------------------Font 2--------------------------------------------------------------->   
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +25,17 @@
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
     <link rel="stylesheet" href="./style.css">
+
+
+    <!--Meta Data-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lak3y.com/">
+    <meta property="og:title" content="Lakindu Perera">
+    <meta property="og:description" content="Its Lakindu Here">   
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/938131839661539339/948274549999403088/unknown.png">
+
 </head>
 <body>
     <nav >
@@ -49,9 +64,9 @@
                 <a href="https://www.linkedin.com/in/lakindu-perera-2988b91b5/" target="blank"><i class="uil uil-linkedin"></i></a>
             </div>
             <div class="info">
-              <h1 class="helloworld"><span>"Hello World",</span><br> I'm Lakindu Perera</h1>
-              <h3>Software engineer and Web designer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut fermentum ex. Fusce et urna in justo semper finibus. Quisque pellentesque nunc non pulvinar iaculis. Aliquam eu lacinia ex, et euismod ex. Mauris lacinia eget tortor quis malesuada. Nulla commodo iaculis metus nec sagittis. Aliquam sodales lorem sed fermentum auctor. Maecenas vel ullamcorper elit. Aenean posuere cursus elit, id malesuada eros. Cras sed ex tortor. Maecenas pretium sed urna sit amet facilisis. Donec ultrices molestie consectetur. Donec in justo purus. Nam dictum erat et dignissim condimentum. Suspendisse non aliquet velit. </p>
+              <h1 class="helloworld" data-aos="fade-up" data-aos-duration="1000"><span>"Hello World",</span><br> I'm Lakindu Perera</h1>
+              <h3 data-aos="fade-left" data-aos-duration="2000">Software engineer and Web designer  </h2>
+            <p data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut fermentum ex. Fusce et urna in justo semper finibus. Quisque pellentesque nunc non pulvinar iaculis. Aliquam eu lacinia ex, et euismod ex. Mauris lacinia eget tortor quis malesuada. Nulla commodo iaculis metus nec sagittis. Aliquam sodales lorem sed fermentum auctor. Maecenas vel ullamcorper elit. Aenean posuere cursus elit, id malesuada eros. Cras sed ex tortor. Maecenas pretium sed urna sit amet facilisis. Donec ultrices molestie consectetur. Donec in justo purus. Nam dictum erat et dignissim condimentum. Suspendisse non aliquet velit. </p>
              
             <a href="#contactus" class="btn btn-primary">Contact Me</a>
             
@@ -73,19 +88,19 @@
 
 
     <section class="about" id="about">
-        <h1>Me, Myself & I</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="1000">Me, Myself & I</h1>
         <div class="container">
             <div class="image">
-                <img src="./images/profile.jpg"> 
+                <img src="./images/profile.jpg" data-aos="fade-right" data-aos-duration="1000"> 
             </div>
             <div class="info">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut fermentum ex. Fusce et urna in justo semper finibus. 
+                <p  data-aos="fade-left" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut fermentum ex. Fusce et urna in justo semper finibus. 
                     Quisque pellentesque nunc non pulvinar iaculis. Aliquam eu lacinia ex, et euismod ex. 
                     Mauris lacinia eget tortor quis malesuada. Nulla commodo iaculis metus nec sagittis. Aliquam sodales lorem sed fermentum auctor. 
                     Maecenas vel ullamcorper elit. Aenean posuere cursus elit, id malesuada eros. Cras sed ex tortor. Maecenas pretium sed urna sit 
                     amet facilisis. </p>
 
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, unde. Ab quaerat, quod provident excepturi tempore 
+                     <p data-aos="fade-left" data-aos-duration="1000" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, unde. Ab quaerat, quod provident excepturi tempore 
                          doloremque labore itaque id beatae libero culpa voluptate asperiores illo officiis! Quia, illo ea. Donec ultrices molestie 
                          consectetur. Donec in justo purus. Nam dictum erat et dignissim condimentum. Suspendisse non aliquet velit.</p>
 
@@ -227,7 +242,7 @@
             <h1>Let's Talk!</h1>
             <form action="https://formspree.io/f/xwkylvkq" method="POST">
                 <input type="text" name="Name" placeholder="Name" required>
-                <input type="email" name="Email" placeholder="Email" required>
+                <input id="email" type="email" name="Email" placeholder="Email" required>
                 <input type="text" name="Subject" placeholder="Subject">
                 <textarea type="text" name="message" placeholder="Message" required></textarea>
                 <input type="submit" value="Submit" class="btn btn-primary"> 
@@ -261,4 +276,10 @@
 
 <script src="./main.js"></script>
 </body>
+
+<script>
+    AOS.init();
+</script>
+
+
 </html>
